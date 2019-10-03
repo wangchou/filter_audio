@@ -11,8 +11,7 @@ Pod::Spec.new do |s|
   s.swift_version = '4.2'
   s.exclude_files = 'test/*'
   s.source_files = '**/*.{h,c}'
-  s.preserve_paths = 'module.modulemap'
-  s.public_header_files = 'vad/vad_core.h', 'vad/include/webrtc_vad.h'
+  s.public_header_files = '**/*.h'
   s.pod_target_xcconfig = {'HEADER_SEARCH_PATHS' => '${SRCROOT}/**'}
   s.static_framework = true
 

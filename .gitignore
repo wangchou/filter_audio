@@ -18,5 +18,6 @@ DerivedData
 *.xccheckout
 FrameworkBuild/
 UserInterfaceState.xcuserstate
+project.xcworkspace/
 #CocoaPods
 Pods
