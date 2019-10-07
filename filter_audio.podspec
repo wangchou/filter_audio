@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name = 'filter_audio'
-  s.version = '0.2.1'
+  s.version = '0.3.0'
   s.license = 'LICENSE'
   s.summary = 'WebRTC audio processing library'
   s.homepage = 'https://www.pylon.com'
@@ -13,8 +13,8 @@ Pod::Spec.new do |s|
   s.exclude_files = 'test/*'
   s.source_files = '**/*.{h,c}'
   s.header_mappings_dir = './'
-  s.private_header_files = '**/*.h'
-  s.public_header_files = 'vad/vad_core.h', 'vad/include/webrtc_vad.h'
+  s.private_header_files = 'aec/*.h', 'agc/*.h', 'ns/*.h', 'other/*.h', 'vad/vad_filterbank.h', 'vad/vad_gmm.h', 'vad/vad_sp.h', 'vad/mock/*.h', 'zam/*.h'
+  s.public_header_files = 'vad/vad_core.h', 'vad/include/webrtc_vad.h', 'aec/include/*.h', 'aec/include/*.h', 'filter_audio.h', 'ns/include/*.h', 'vad/include/*.h'
   s.pod_target_xcconfig = {'HEADER_SEARCH_PATHS' => '${SRCROOT}/**'}
   s.static_framework = true
 
