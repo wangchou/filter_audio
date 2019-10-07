@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name = 'filter_audio'
-  s.version = '0.3.0'
+  s.version = '0.3.1'
   s.license = 'LICENSE'
   s.summary = 'WebRTC audio processing library'
   s.homepage = 'https://www.pylon.com'

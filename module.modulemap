@@ -1,4 +1,4 @@
-module filter_audio {
+framework module filter_audio {
   header "vad/vad_core.h"
   header "vad/include/webrtc_vad.h"
   export *
