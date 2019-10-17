@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name = 'filter_audio'
-  s.version = '0.4.2'
+  s.version = '0.4.3'
   s.license = 'LICENSE'
   s.summary = 'WebRTC audio processing library'
   s.homepage = 'https://www.pylon.com'
@@ -9,7 +9,7 @@ Pod::Spec.new do |s|
   s.license = {:type => 'Apache', :file => 'LICENSE'}
   s.ios.deployment_target = '11.0'
   s.swift_version = '4.2'
-  s.module_map = 'module.modulemap'
+  s.module_map = 'filter_audio.modulemap'
   s.exclude_files = 'test/*'
   s.source_files = '**/*.{h,c}'
   s.header_mappings_dir = './'
