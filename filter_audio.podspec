@@ -8,6 +8,7 @@ Pod::Spec.new do |s|
   s.source = { :git => 'https://github.com/pylon/filter_audio.git', :tag => s.version.to_s }
   s.license = {:type => 'Apache', :file => 'LICENSE'}
   s.ios.deployment_target = '11.0'
+  s.osx.deployment_target = '11.0'
   s.swift_version = '4.2'
   s.module_map = 'filter_audio.modulemap'
   s.exclude_files = 'test/*'
