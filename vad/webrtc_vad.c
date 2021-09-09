@@ -127,3 +127,8 @@ int WebRtcVad_ValidRateAndFrameLength(int rate, int frame_length) {
 
   return return_value;
 }
+
+int WebRtcVad_GetCurrentOverHang(VadInst* handle) {
+  VadInstT* self = (VadInstT*) handle;
+  return self->last_assigned_over_hang; // Over Hang
+}

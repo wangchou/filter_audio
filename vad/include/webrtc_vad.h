@@ -81,6 +81,11 @@ int WebRtcVad_Process(VadInst* handle, int fs, const int16_t* audio_frame,
 // returns            : 0 - (valid combination), -1 - (invalid combination)
 int WebRtcVad_ValidRateAndFrameLength(int rate, int frame_length);
 
+// This should only be called right after WebRtcVad_Process
+//
+// returns handle->over_hang (for trimming empty hangOver)
+int WebRtcVad_GetCurrentOverHang(VadInst* handle);
+
 #ifdef __cplusplus
 }
 #endif

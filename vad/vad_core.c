@@ -482,6 +482,7 @@ static int16_t GmmProbability(VadInstT* self, int16_t* features,
     } else {
       self->over_hang = overhead1;
     }
+    self->last_assigned_over_hang = self->over_hang;
   }
   return vadflag;
 }

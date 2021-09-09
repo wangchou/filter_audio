@@ -52,6 +52,7 @@ typedef struct VadInstT_
     int16_t total[3];
 
     int init_flag;
+    int16_t last_assigned_over_hang; // Over Hang
 
 } VadInstT;
 
