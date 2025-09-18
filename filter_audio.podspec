@@ -9,7 +9,7 @@ Pod::Spec.new do |s|
   s.license = {:type => 'Apache', :file => 'LICENSE'}
   s.ios.deployment_target = '11.0'
   s.osx.deployment_target = '11.0'
-  s.swift_version = '4.2'
+  s.swift_version = '5.0'
   s.module_map = 'filter_audio.modulemap'
   s.exclude_files = 'test/*'
   s.source_files = '**/*.{h,c}'
